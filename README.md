@@ -44,6 +44,8 @@ df.head()
 
 # OUTPUT:
 
+![1](https://github.com/user-attachments/assets/cf23961f-2fca-4e36-b660-47122f3d123e)
+
 
 ```
 from sklearn.preprocessing import LabelEncoder,OrdinalEncoder
@@ -55,6 +57,8 @@ e1.fit_transform(df[["ord_2"]])
 
 # OUTPUT:
 
+![2](https://github.com/user-attachments/assets/d1326ce5-9c8f-4d96-ab48-275734255975)
+
 
 ```
 df['bo2']=e1.fit_transform(df[["ord_2"]])
@@ -63,6 +67,9 @@ df
 ```
 
 # OUTPUT:
+
+![3](https://github.com/user-attachments/assets/7014c061-e462-4288-8a5e-7981dd5ee2da)
+
 
 
 ```
@@ -74,6 +81,9 @@ dfc
 ```
 
 # OUTPUT:
+
+![4](https://github.com/user-attachments/assets/28254ad9-fe46-4ac4-984c-1c3fb50169ef)
+
 
 
 ```
@@ -93,6 +103,9 @@ df2
 
 # OUTPUT:
 
+![6](https://github.com/user-attachments/assets/7291bead-6d93-4e77-ba55-8bec37707620)
+
+
 
 ```
 pd.get_dummies(df2,columns=["nom_0"])
@@ -101,6 +114,9 @@ pd.get_dummies(df2,columns=["nom_0"])
 
 # OUTPUT:
 
+![7](https://github.com/user-attachments/assets/a71d7d20-758b-43a0-8886-eef84971525e)
+
+
 
 ```
 pip install --upgrade category_encoders
@@ -108,6 +124,8 @@ pip install --upgrade category_encoders
 ```
 
 # OUTPUT:
+
+![8](https://github.com/user-attachments/assets/a85c45fa-0f2e-4680-8d68-8421e4acd3e3)
 
 
 ```
@@ -118,6 +136,8 @@ df
 ```
 
 # OUTPUT:
+
+![9](https://github.com/user-attachments/assets/0466f24f-2625-495d-a40e-ad388d35a703)
 
 
 ```
@@ -130,6 +150,8 @@ dfb
 ```
 
 # OUTPUT:
+
+![10](https://github.com/user-attachments/assets/7104ee9b-befb-4dc7-a265-318a8a995971)
 
 
 ```
@@ -144,6 +166,8 @@ CC
 
 # OUTPUT:
 
+![11](https://github.com/user-attachments/assets/d574133b-5048-4ff0-8b6f-c1e1d00ef501)
+
 
 ```
 import pandas as pd
@@ -156,6 +180,8 @@ df
 
 # OUTPUT:
 
+![12](https://github.com/user-attachments/assets/f52ddb5e-8251-4550-848d-3a88312e608a)
+
 
 ```
 df.skew()
@@ -163,6 +189,8 @@ df.skew()
 ```
 
 # OUTPUT:
+
+![13](https://github.com/user-attachments/assets/e1ad6d51-1b4f-446d-a7aa-3c3c2665b759)
 
 
 ```
@@ -172,6 +200,8 @@ np.log(df["Highly Positive Skew"])
 
 # OUTPUT:
 
+![14](https://github.com/user-attachments/assets/84ebaec0-6428-4da3-92f9-5ae2eb533365)
+
 
 ```
 np.reciprocal(df["Moderate Positive Skew"])
@@ -179,6 +209,8 @@ np.reciprocal(df["Moderate Positive Skew"])
 ```
 
 # OUTPUT:
+
+![15](https://github.com/user-attachments/assets/8ed7594a-b9bd-4d94-a500-18fb72eea27f)
 
 
 ```
@@ -188,6 +220,8 @@ np.sqrt(df["Highly Positive Skew"])
 
 # OUTPUT:
 
+![16](https://github.com/user-attachments/assets/be7dda88-b875-4a39-bd69-c1435395dc63)
+
 
 ```
 np.square(df["Highly Positive Skew"])
@@ -195,6 +229,8 @@ np.square(df["Highly Positive Skew"])
 ```
 
 # OUTPUT:
+
+![17](https://github.com/user-attachments/assets/a49ce1b8-f328-4886-9272-12cf9578d3d3)
 
 
 ```
@@ -204,6 +240,8 @@ df
 ```
 
 # OUTPUT:
+
+![18](https://github.com/user-attachments/assets/8d88513d-7b27-47d5-886f-e7575d06f543)
 
 
 ```
@@ -222,6 +260,8 @@ plt.show()
 
 # OUTPUT:
 
+![20](https://github.com/user-attachments/assets/73eac225-3f84-4654-9ccd-cc4db217c734)
+
 
 ```
 from sklearn.preprocessing import QuantileTransformer
@@ -233,6 +273,7 @@ df
 
 # OUTPUT:
 
+![21](https://github.com/user-attachments/assets/b3e63284-b46e-4419-8608-eb534ffd6d19)
 
 ```
 df["Highly Negative Skew_1"]=qt.fit_transform(df[["Highly Negative Skew"]])
@@ -243,6 +284,8 @@ plt.show()
 
 # OUTPUT:
 
+![22](https://github.com/user-attachments/assets/714a7d3c-6118-4dfe-8ab8-b9aefa834380)
+
 
 ```
 sm.qqplot(df["Highly Negative Skew_1"],line='45')
@@ -251,6 +294,8 @@ plt.show()
 ```
 
 # OUTPUT:
+
+![23](https://github.com/user-attachments/assets/18f3daf2-4fd2-4068-9f22-321cc94e2e3c)
 
 
 ```
@@ -261,6 +306,7 @@ plt.show()
 
 # OUTPUT:
 
+![24](https://github.com/user-attachments/assets/d44ba7e6-34fc-42ad-bea4-ba0191ef5d6e)
 
 
 
